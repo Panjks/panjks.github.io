@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <title>Panjks-</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="google-site-verification" content="J2PiOsBBrzxvzRLGLk8sWK9FBqz9raU5Vh4BF4GoWzY" />
+<!--[if lt IE 9] -->
+<script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<!-- [endif] -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="rabbit_favicon64.ico">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+<!-- BGM区域 -->
+<audio autoplay="autoplay" loop="loop" preload="auto">
+<source src="https://panjks.github.io/homepage.mp3" type="audio/mpeg">
+</audio>
+<div class="wrapper">
+    <div id="main">
+        <!-- Header -->
+        <header id="header">
+            <div align="center">
+                <img src="/rabbit900.jpg" style="width:100px;height:100px;border-radius:50%;overflow:hidden;" />
+            </div>
+	        <h1>L1n</h1>
+	        <h2>Accumulate, Business, Code &amp; Things in Life&nbsp;</h2>
+	        <p>
+		        <a href="https://panjks.github.io/Blog" target="_self">Blog</a>
+	        </p>
+	        <p>
+		        <a href="https://github.com/panjks" target="_blank">Github</a>
+	        </p>
+	        <p>
+		        <a href="https://panjks.github.io/Blog/about/" target="_blank">About</a>
+	        </p>
+        </header>
+    </div>
+    <div id="footer">
+        <div style="text-align:center;">
+        Copyright © 2019 - 2020 L1n.</br>
+        All Rights Reserved. &nbsp;Powered by <a href="https://github.com/panjks" target="_blank">L1n<a />
+        </div>
+    </div>
+</div>
+<canvas></canvas>
+<!-- 鼠标点击效果 -->
+<script type="text/javascript" src="js/fireworks.js"></script>
+<script>document.addEventListener("touchmove",function(e){e.preventDefault()});var q,c=document.getElementsByTagName("canvas")[0],x=c.getContext("2d"),pr=window.devicePixelRatio||1,w=window.innerWidth,h=window.innerHeight,f=90,m=Math,r=0,u=2*m.PI,v=m.cos,z=m.random;c.width=w*pr,c.height=h*pr,x.scale(pr,pr),x.globalAlpha=.6;function i(){for(x.clearRect(0,0,w,h),q=[{x:0,y:.7*h+f},{x:0,y:.7*h-f}];q[1].x<w+f;)d(q[0],q[1])}function d(e,t){x.beginPath(),x.moveTo(e.x,e.y),x.lineTo(t.x,t.y);var n=t.x+(2*z()-.25)*f,i=y(t.y);x.lineTo(n,i),x.closePath(),r-=u/-50,x.fillStyle="#"+(127*v(r)+128<<16|127*v(r+u/3)+128<<8|127*v(r+u/3*2)+128).toString(16),x.fill(),q[0]=q[1],q[1]={x:n,y:i}}function y(e){var t=e+(2*z()-1.1)*f;return t>h||t<0?y(e):t}document.onclick=i,document.ontouchstart=i,i()</script>
+</body>
+</html>
